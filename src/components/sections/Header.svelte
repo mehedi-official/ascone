@@ -16,6 +16,6 @@
     </div>
 
     {#if scrollY?.current > 120}
-      <Navbar class="fixed top-0 left-0 bg-white w-full px-14 py-3 shadow-lg"/>
+      <Navbar class="fixed z-50 top-0 left-0 bg-white w-full px-14 py-3 shadow-lg"/>
     {/if}
 </header>

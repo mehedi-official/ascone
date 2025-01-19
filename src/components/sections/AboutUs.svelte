@@ -4,7 +4,7 @@
     import avatar_02 from "$lib/assets/avatar_02.png";
     import avatar_03 from "$lib/assets/avatar_03.png";
     import dollar from "$lib/assets/dollar.png";
-    let avatars = [avatar_01, avatar_02, avatar_03];
+    import { bd_flag, jp_flag, palestine } from "@components/Logos.svelte";
 </script>
 
 <div class="mx-24">
@@ -48,9 +48,9 @@
                     </div>
 
                     <div class="flex">
-                        {#each avatars as avatar, i}
-                            <div class={["overflow-hidden rounded-full border-2 border-neutral-sky", i !== 0 && "-ml-3"]}><img src={avatar} alt="avatar_{i + 1}"></div>
-                        {/each}
+                        <div class={["overflow-hidden w-12 h-12 rounded-full border-2 border-neutral-sky"]}>{@render bd_flag()}</div>
+                        <div class={["overflow-hidden rounded-full w-12 h-12 border-2 border-neutral-sky -ml-3"]}>{@render palestine()}</div>
+                        <div class={["overflow-hidden rounded-full w-12 h-12 border-2 border-neutral-sky -ml-3"]}>{@render jp_flag()}</div>
                     </div>
                 </div>
 
@@ -60,7 +60,7 @@
 
                 <div class="absolute left-[60%] bottom-[40%]">
                     <div class="relative">
-                        <div class={["overflow-hidden rounded-full border-2 border-neutral-sky"]}><img src={avatar_01} alt="avatar_01"></div>
+                        <div class={["overflow-hidden rounded-full border-2 border-neutral-sky"]}><img src={avatar_03} alt="avatar_01"></div>
                         <div class="absolute -top-4 -translate-y-full left-0 bg-primary py-4 text-white">
                             <p class="mb-4 px-5 text-[2rem]/8 font-semibold">$40,000</p>
                             <p class="px-5 text-sm/[14px] font-normal">Thanks Chris!</p>

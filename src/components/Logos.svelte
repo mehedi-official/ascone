@@ -1,5 +1,5 @@
 <script module>
- export { openAI, raycast, pachama, loom, everland }
+ export { openAI, raycast, pachama, loom, everland, bd_flag, jp_flag, palestine }
 </script>
 
 {#snippet openAI()}
@@ -77,6 +77,36 @@
         <defs>
         <clipPath id="clip0_1978_1904">
         <rect width="143.1" height="36" fill="white"/>
+        </clipPath>
+        </defs>
+    </svg>
+{/snippet}
+
+{#snippet bd_flag()}
+    <svg  class="w-full h-full" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 24C0 37.2548 10.7452 48 24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24Z" fill="#006A4E"/>
+        <path d="M24 36C30.6274 36 36 30.6274 36 24C36 17.3726 30.6274 12 24 12C17.3726 12 12 17.3726 12 24C12 30.6274 17.3726 36 24 36Z" fill="#F42A41"/>
+    </svg>
+{/snippet}
+
+{#snippet jp_flag()}
+    <svg  class="w-full h-full" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 24C0 37.2548 10.7452 48 24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24Z" fill="white"/>
+        <path d="M24 36C30.6274 36 36 30.6274 36 24C36 17.3726 30.6274 12 24 12C17.3726 12 12 17.3726 12 24C12 30.6274 17.3726 36 24 36Z" fill="#F42A41"/>
+    </svg>
+{/snippet}
+
+{#snippet palestine()}
+    <svg  class="w-full h-full" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_2058_1892)">
+        <path d="M48 0H0V48H48V0Z" fill="#009639"/>
+        <path d="M48 0H0V32H48V0Z" fill="white"/>
+        <path d="M48 0H0V16H48V0Z" fill="black"/>
+        <path d="M0 0L21 24L0 48V0Z" fill="#ED2E38"/>
+        </g>
+        <defs>
+        <clipPath id="clip0_2058_1892">
+        <rect width="48" height="48" rx="24" fill="white"/>
         </clipPath>
         </defs>
     </svg>
