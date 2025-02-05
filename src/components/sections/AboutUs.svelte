@@ -7,16 +7,16 @@
     import { bd_flag, jp_flag, palestine } from "@components/Logos.svelte";
 </script>
 
-<div class="mx-24">
+<div class="mx-4 lg:mx-24">
     <section class="py-24 grid gap-12">
         <div class="text-center max-w-[34rem] mx-auto">
             <strong class="text-sm/[14px] font-medium text-primary uppercase">ABOUT US</strong>
-            <h2 class="mt-2 text-[56px]/[120%] font-semibold text-secondary -tracking-[2px]">One app for all your money things</h2>
-            <p class="mt-6 mx-auto max-w-md text-lg font-medium -tracking-[0.4px] text-gray-500">Remove all the friction that stands in the way of your money goals.</p>
+            <h2 class="mt-2 text-4xl/[125%] lg:text-[56px]/[120%] font-semibold text-secondary -tracking-[2px]">One app for all your money things</h2>
+            <p class="mt-3 lg:mt-6 mx-auto max-w-md text-base/4 lg:text-lg font-medium -tracking-[0.4px] text-gray-500">Remove all the friction that stands in the way of your money goals.</p>
         </div>
         <div class="card-container min-h-[33rem]">
-            <div class="card bg-primary pt-8 pb-12 px-10 flex flex-col justify-between">
-                <h3 class="text-5xl/tight font-medium text-white tracking-tight">Grow savings faster</h3>
+            <div class="card bg-primary pt-8 pb-12 px-10 flex gap-4 flex-col justify-between">
+                <h3 class="text-4xl/tight lg:text-5xl/tight font-medium text-white tracking-tight">Grow savings faster</h3>
 
                 <div class="flex justify-between items-end">
                     <div class=" w-6 bg-white/20 h-7"></div>
@@ -32,9 +32,9 @@
                     <div class=" w-6 bg-white/20 h-40"></div>
                 </div>
             </div>
-            <div class="card flex flex-col justify-between relative overflow-hidden z-0 bg-neutral-sky text-primary pt-8 pb-24 px-10 rounded-bl-[20%]">
-                <h3 class="text-5xl/tight font-medium tracking-tight">Send across the global</h3>
-                <div class="flex justify-between relative z-10 pl-8">
+            <div class="card min-h-96 flex flex-col justify-between relative overflow-hidden z-0 bg-neutral-sky text-primary pt-8 pb-24 px-10 rounded-bl-[20%]">
+                <h3 class="text-4xl/tight lg:text-5xl/tight font-medium tracking-tight">Send across the global</h3>
+                <div class="hidden lg:flex justify-between relative z-10 pl-8">
                     <div class="flex">
                         <div class="relative">
                             <div class={["overflow-hidden rounded-full border-2 border-neutral-sky"]}><img src={avatar_01} alt="avatar_01"></div>
@@ -54,11 +54,11 @@
                     </div>
                 </div>
 
-                <div class="absolute bottom-0 translate-y-1/3 left-1/2 -translate-x-1/2">
+                <div class="absolute bottom-0 translate-y-1/2 lg:translate-y-1/3 left-1/2 -translate-x-1/2">
                     {@render aboutus_illustration()}
                 </div>
 
-                <div class="absolute left-[60%] bottom-[40%]">
+                <div class="absolute left-12 bottom-16 lg:left-[60%] lg:bottom-[40%]">
                     <div class="relative">
                         <div class={["overflow-hidden rounded-full border-2 border-neutral-sky"]}><img src={avatar_03} alt="avatar_01"></div>
                         <div class="absolute -top-4 -translate-y-full left-0 bg-primary py-4 text-white">
@@ -75,7 +75,13 @@
 <style>
     .card-container {
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr;
         gap: 1rem;
+    }
+
+    @media (min-width: 64rem) {
+        .card-container {
+            grid-template-columns: 1fr 2fr;
+        }
     }
 </style>

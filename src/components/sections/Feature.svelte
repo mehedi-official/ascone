@@ -3,18 +3,18 @@
     
 </script>
 
-<div class="mx-24">
+<div class="mx-4 lg:mx-24">
     <section class="grid gap-12">
         <div class="content">
             <div>
                 <strong class="text-sm/[14px] font-medium text-primary uppercase">VALUES</strong>
-                <h2 class="text-[56px]/[120%] font-semibold text-secondary -tracking-[2px]">Make your spend, Well-spent</h2>
+                <h2 class="text-4xl/[125%] lg:text-[56px]/[120%] font-semibold text-secondary -tracking-[2px]">Make your spend, Well-spent</h2>
             </div>
             <p class=" max-w-md text-lg font-medium -tracking-[0.4px] text-gray-500">Manages a diversified group of specialized private credit brands with effecient tech-enabled processes.</p>
         </div>
 
         <section class="card-container">
-            <div class="card p-12 pb-9 border border-primary/20 grid gap-16">
+            <div class="card p-6 py-10 lg:p-12 border border-primary/20 grid gap-16">
                 <div>{@render transparency()}</div>
                 <div class="grid gap-12">
                     <div class="grid gap-3">
@@ -24,7 +24,7 @@
                     <div class="hover:cursor-pointer flex w-14 h-14 rounded-full border border-primary/20 justify-center items-center">{@render arrow_up_45()}</div>
                 </div>
             </div>
-            <div class="card p-12 pb-9 border border-primary/20 grid gap-16">
+            <div class="card p-6 py-10 lg:p-12 border border-primary/20 grid gap-16">
                 <div class="h-14">{@render creative()}</div>
                 <div class="grid gap-12">
                     <div class="grid gap-3">
@@ -34,7 +34,7 @@
                     <div class="hover:cursor-pointer flex w-14 h-14 rounded-full border border-primary/20 justify-center items-center">{@render arrow_up_45()}</div>
                 </div>
             </div>
-            <div class="card text-primary p-12 pb-9 bg-neutral-yellow rounded-tr-[25%] grid gap-16">
+            <div class="card text-primary p-6 py-10 lg:p-12 bg-neutral-yellow rounded-tr-[25%] grid gap-16">
                 <div>{@render credit("#1C3F3A")}</div>
                 <div class="grid gap-12">
                     <div class="grid gap-3">
@@ -51,13 +51,22 @@
 <style>
     .card-container {
         display: grid;
-        grid-template-columns: 3fr 3fr 4fr;
+        grid-template-columns: 1fr;
         gap: 1rem;
     }
     .content {
         display: grid;
-        grid-template-columns: 2fr 3fr;
+        grid-template-columns: 1fr;
         align-items: end;
-        justify-items: end;
+    }
+
+    @media (min-width: 64rem) {
+        .card-container {
+            grid-template-columns: 3fr 3fr 4fr;
+        }
+        .content {
+            grid-template-columns: 2fr 3fr;
+            justify-items: end;
+        }
     }
 </style>

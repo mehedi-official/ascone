@@ -20,7 +20,7 @@
 </script>
 
 
-<div class="mx-24">
+<div class="mx-4 lg:mx-24">
     <section class="content">
         <div>
             <strong class="text-sm/[14px] font-medium text-primary uppercase">FAQ</strong>
@@ -30,7 +30,7 @@
             {#each questions as qna, idx}
                 <div class={['border-b border-primary/10 pb-10', idx !== 0 && 'pt-10']}>
                     <button class="w-full flex gap-4 justify-between" onclick={() => handleClick(activatedIdx, idx)}>
-                        <h3 class=" text-2xl/6 font-semibold text-secondary">{qna.question}</h3>
+                        <h3 class="text-left text-2xl/6 font-semibold text-secondary">{qna.question}</h3>
                         <span class={['transition-all text-[#e13145]', qna.isActive && 'rotate-45']}>{@render plus(!qna.isActive)}</span>
                     </button>
                     {#if qna.isActive}
@@ -45,8 +45,15 @@
 <style>
     .content {
         display: grid;
-        grid-template-columns: 8fr 9fr;
-        gap: 1rem;
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    @media (min-width: 64rem) {
+        .content {
+            grid-template-columns: 8fr 9fr;
+            gap: 1rem;
+        }
     }
 </style>
 

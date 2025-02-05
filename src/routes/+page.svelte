@@ -15,3 +15,7 @@
 <Faq />
 <Cta />
 <Footer />
+
+<svelte:head>
+  <title>Ascone | Digital Finance Inc.</title>
+</svelte:head>

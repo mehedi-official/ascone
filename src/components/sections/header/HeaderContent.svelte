@@ -10,17 +10,17 @@
 </script>
 
 
-<section class={['grid grid-cols-2', props.class]}>
-    <section class="grid gap-20">
+<section class={['grid grid-cols-1 lg:grid-cols-2', props.class]}>
+    <section class="grid gap-6 lg:gap-20">
         <div>
-            <p class="text-sm/[14px] font-medium text-primary uppercase">TRY IT NOW!</p>
-            <h1 class=" text-[68px]/[125%] font-semibold text-secondary -tracking-[2px]">Change the way you use your money</h1>
+            <p class="text-sm/[14px] font-medium text-primary uppercase mb-2">TRY IT NOW!</p>
+            <h1 class=" text-5xl/[125%] lg:text-[68px]/[125%] font-semibold text-secondary -tracking-[2px]">Change the way you use your money</h1>
         </div>
 
-        <div class="grid gap-8">
+        <div class="grid gap-4 lg:gap-8">
             <p class=" max-w-[28.5rem] text-lg font-medium -tracking-[0.4px] text-gray-500">From your everyday spending, to planning for your future with savings and investments, Ascone helps you get more from your money.</p>
-            <div class="flex gap-6 items-center">
-                <button class="hover:bg-primary/90 flex text-base/4 font-medium bg-primary text-white py-3 rounded-full px-6">Get Started Now</button>
+            <div class="flex gap-3 lg:gap-6 items-center">
+                <button class="hover:bg-primary/90 flex items-center text-base/4 font-medium bg-primary text-white py-3 rounded-full px-4 lg:px-6">Get Started Now</button>
                 <div>
                     <div class="flex gap-2 items-center">
                         {#each { length: 5 } }
@@ -33,7 +33,7 @@
             </div>
         </div>
     </section>
-    <section class="grid grid-cols-2 grid-rows-2">
+    <section class="hidden lg:grid grid-cols-2 grid-rows-2">
         <div class="bg-[#D3DADA] relative">
             <div class=" pt-8 pr-8 grid gap-4 justify-end justify-items-end">
                 <div class=" bg-white h-3 w-20"></div>
