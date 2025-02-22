@@ -3,7 +3,7 @@
     
 </script>
 
-<div class="mx-4 lg:mx-24">
+<div class="mx-4 lg:mx-24 2xl:mx-48">
     <section class="grid gap-12">
         <div class="content">
             <div>

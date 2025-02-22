@@ -7,7 +7,7 @@
     import { bd_flag, jp_flag, palestine } from "@components/Logos.svelte";
 </script>
 
-<div class="mx-4 lg:mx-24">
+<div class="mx-4 lg:mx-24 2xl:mx-48">
     <section class="py-24 grid gap-12">
         <div class="text-center max-w-[34rem] mx-auto">
             <strong class="text-sm/[14px] font-medium text-primary uppercase">ABOUT US</strong>

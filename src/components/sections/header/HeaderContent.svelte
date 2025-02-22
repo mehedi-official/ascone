@@ -11,7 +11,7 @@
 
 
 <section class={['grid grid-cols-1 lg:grid-cols-2', props.class]}>
-    <section class="grid gap-6 lg:gap-20">
+    <section class="grid gap-6 lg:gap-20 2xl:gap-40">
         <div>
             <p class="text-sm/[14px] font-medium text-primary uppercase mb-2">TRY IT NOW!</p>
             <h1 class=" text-5xl/[125%] lg:text-[68px]/[125%] font-semibold text-secondary -tracking-[2px]">Change the way you use your money</h1>
@@ -33,7 +33,7 @@
             </div>
         </div>
     </section>
-    <section class="hidden lg:grid grid-cols-2 grid-rows-2">
+    <section class="hidden lg:grid grid-cols-2 grid-rows-2 2xl:px-28">
         <div class="bg-[#D3DADA] relative">
             <div class=" pt-8 pr-8 grid gap-4 justify-end justify-items-end">
                 <div class=" bg-white h-3 w-20"></div>

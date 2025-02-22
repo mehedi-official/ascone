@@ -30,6 +30,13 @@
 		animation: scroll 15s linear infinite;
 		animation-direction: var(--direction);
 	}
+
+	@media(min-width: 96rem) {
+		.scroller {
+			animation: none;
+			mask-image: linear-gradient(to right, transparent, #000 1% 99%, transparent);
+		}
+	}
 	/* .first-child {
         background: red;
     }
